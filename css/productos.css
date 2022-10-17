@@ -1,0 +1,174 @@
+/* Import estilo de letra*/
+
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@200;300;500&display=swap');
+
+/* Variables */
+
+:root {
+
+    /* Palette*/
+    --primary: #292F36; 
+    --secondary: #4ECDC4; 
+    --ligth: #FFFFFF;
+    --accent: #8C1C13;
+   
+    /* Font Sizes*/
+    --text-xxl: 4.8em;
+    --text-xl: 3.6em;
+    --text-lg: 3.2em;
+    --text-md: 2.0em;
+    --text-sm: 1.6em;
+    --text-xs: 1.4em;
+
+    /*Spacing*/
+    --sp-xxl: 12rem;
+    --sp-xl: 8rem;
+    --sp-lg: 5rem;
+    --sp-md: 3.2rem;
+    --sp-sm: 1.6rem;
+    --sp-xs: 0.8rem;
+
+}
+
+/*Normalize*/
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box ;
+}
+
+html {
+font-size: 62.5%;
+}
+
+body {
+    font-family: 'Mada', sans-serif;
+    font-size: var(--text-sm);
+}
+/*Generales columnas*/
+.bloqueAbajo{
+    display: inline-block;
+    vertical-align: bottom;
+}
+.bloqueArriba{
+    display: inline-block;
+    vertical-align: top;
+}
+.bloqueMitad{
+    display: inline-block;
+    vertical-align: middle;
+}
+.columna{
+    padding: 15px;
+    width: 100%;
+}
+.columna25{
+    width: 24%;
+}
+.columna50{
+    width: 49%;
+}
+.columna75{
+    width: 74%;
+}
+
+/*Posiciones generales*/
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+
+
+/*Header*/
+
+/*FIJAR HEADER*/
+header{
+    position: sticky;
+    top: 0;
+}
+/*FIJAR HEADER*/
+
+header {
+    background-color: var(--primary);
+}
+
+.navbar{
+    font-size: var(--text-md);
+}
+
+.navbar ul{
+    list-style-type: none;
+    display:inline-flex;
+     margin-left: 2rem;
+}
+.navbar  li a {
+
+    display:block;
+    padding: 2rem 1rem;
+    color: var(--ligth);
+    text-decoration: none;
+}
+.navbar li a:hover {
+background-color: #2c1313;
+}
+.navbar > li {
+    float:
+}
+.navbar li ul {
+display:none;
+position: absolute;
+min-width: 1rem;
+}
+.navbar li:hover > ul{
+display: block;
+}
+.submenu{
+    background-color: var(--primary);
+}
+figure {
+    display: inline-block;
+    margin: 1rem;
+}
+/*div {
+    margin: 4rem;2rem;4rem;2rem;
+}*/
+footer {
+    padding: 1em 0;
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--ligth);
+    font-size: var(--text-xs);
+}
+
+/*  MAIN  */
+main{
+    margin-top: 2rem;
+    padding: 0 5rem;
+}
+
+/* CAJAS DE TEXTO */
+.cajaText{
+    padding: 2rem;
+    background-color: #d9d9d9;
+    margin: 4rem 0;
+}
+
+.cajaText h1{
+    margin-bottom: 3rem;
+    text-align: left;
+    font-size: var(--text-md);
+}
+.cajaText p{
+    text-align: center;
+    font-size: var(--text-xs);
+}
+
+.margenCajasText{
+    padding: 0 10rem;
+}
+span {
+margin:8rem;
+}
