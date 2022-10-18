@@ -47,93 +47,60 @@ body {
     font-size: var(--text-sm);
 }
 
-/*Generales columnas*/
-.bloqueAbajo{
-    display: inline-block;
-    vertical-align: bottom;
-}
-
-.bloqueArriba{
-    display: inline-block;
-    vertical-align: top;
-}
-
-.bloqueMitad{
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.columna{
-    padding: 15px;
-    width: 100%;
-}
-
-.columna25{
-    width: 24%;
-}
-
-.columna50{
-    width: 49%;
-}
-
-.columna75{
-    width: 74%;
-}
-
-/*Posiciones generales*/
-.left{
-    text-align: left;
-}
-.right{
-    text-align: right;
-}
-
-
 /*Header*/
 
 /*FIJAR HEADER*/
 header{
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: space-between;
 }
+
 /*FIJAR HEADER*/
 
-header {
-    /*background-image: url(../images/image\ 19.png);*/
-}
-
 .navbar{
-    font-size: var(--text-md);
+    font-size: var(--text-xl);
 }
-
 .navbar ul{
     list-style-type: none;
-    display:inline-flex;
-     margin-left: 2rem;
+     display: flex ;
 }
 .navbar  li a {
 
     display:block;
-    padding: 2rem 1rem;
-    color: ;
+    padding: 0.3rem 0.6rem;
     text-decoration: none;
+    color: black;
 }
 .navbar li a:hover {
-background-color: #2c1313;
-}
-.navbar > li {
-    float:
+background-color: var(--secondary);
+transition: all 1s ease-in-out;
 }
 .navbar li ul {
 display:none;
 position: absolute;
-min-width: 1rem;
+/*min-width: 1rem;*/
 }
 .navbar li:hover > ul{
 display: block;
 }
 .submenu{
-    background-color: var(--primary);
+    background-color: var(--ligth);
+}
+@media screen and (max-width:620px) {
+    header{
+        position: sticky;
+        display: list-item; 
+
+    }
+    .navbar ul {
+       flex-direction: column;
+ 
+    } 
+
+   
+    }
 }
 figure {
     display: inline-block;
@@ -148,31 +115,4 @@ footer {
     background-color: var(--primary);
     color: var(--ligth);
     font-size: var(--text-xs);
-}
-
-/*  MAIN  */
-main{
-    margin-top: 2rem;
-    padding: 0 5rem;
-}
-
-/* CAJAS DE TEXTO */
-.cajaText{
-    padding: 2rem;
-    background-color: #d9d9d9;
-    margin: 4rem 0;
-}
-
-.cajaText h1{
-    margin-bottom: 3rem;
-    text-align: left;
-    font-size: var(--text-md);
-}
-.cajaText p{
-    text-align: center;
-    font-size: var(--text-xs);
-}
-
-.margenCajasText{
-    padding: 0 10rem;
 }
