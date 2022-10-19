@@ -55,25 +55,42 @@
  </header>
 
  <main>
-    <article>
-    <figure><img src="./images/image 2.jpg" alt="image2"></figure>
-    <figure><img src="./images/image 3.jpg" alt="image3"></figure>
-    <figure><img src="./images/image 4.jpg" alt="image4"></figure>
-    <figure><img src="./images/image 5.jpg" alt="image5"></figure>
-    </article>
+   <section>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./images/Group 5.jpg" class="d-block w-100" alt="image 3">
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="./images/Group 4.jpg" class="d-block w-100" alt="image 4">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./images/Group 3.jpg" class="d-block w-100" alt="image 2">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 
-    <article>
-        <div>
+    <article class="row">
+        <div class="col-12 col-sm-6 col-lg-4 p-3 mb-2 bg-warning bg-gradient text-dark">
             <h1>Papel Reciclado de la Mejor calidad!</h1>
             <p>Trabajamos dia a dia para mejorar la calidad y variedad de nuestros productos, teniendo en cuenta como
              premisia RESPETAR EL MEDIO AMBIENTE</p>
         </div>
-        <div>
+        <div class="col-12 col-sm-6 col-lg-4 p-3 mb-2 bg-danger bg-gradient text-dark">
             <h1>Mantenemos relación directa con nuestros Clientes</h1>
             <p>Tomamos en cuenta las necesidades de nuestros clientes para desarrollar productos que cumplan con las 
             espectativas del usuario final, tanto para uso en el hogar o de caracter institucional.</p>
         </div>
-        <div>
+        <div class="col-12 col-sm-12 col-lg-4 p-3 mb-2 bg-info bg-gradient text-dark">
             <h1>Mayor variedad de Productos</h1>
             <p>Te ofrecemos la mayor linea de productos como papel higienico, toallas de Cocina y servilletas de 
             distintos formatos adecuandonos a las distintas necesidades de los clientes.</p>

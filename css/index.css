@@ -44,7 +44,7 @@ font-size: 62.5%;
 
 body {
     font-family: 'Mada', sans-serif;
-    font-size: var(--text-sm);
+    font-size: var(--text-xl);
 }
 
 /*Header*/
@@ -55,6 +55,8 @@ header{
     top: 0;
     display: flex;
     justify-content: space-between;
+    background-color: #cf833c;
+    z-index: 2;
 }
 
 /*FIJAR HEADER*/
@@ -88,6 +90,7 @@ display: block;
 .submenu{
     background-color: var(--ligth);
 }
+
 @media screen and (max-width:620px) {
     header{
         position: sticky;
@@ -98,21 +101,12 @@ display: block;
        flex-direction: column;
  
     } 
+ }
 
-   
-    }
-}
-figure {
-    display: inline-block;
-    margin: 1rem;
-}
-/*div {
-    margin: 4rem;2rem;4rem;2rem;
-}*/
 footer {
     padding: 1em 0;
     text-align: center;
     background-color: var(--primary);
     color: var(--ligth);
-    font-size: var(--text-xs);
+    font-size: var(--text-sm);
 }
