@@ -56,7 +56,7 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: #cf833c;
-    z-index: 2;
+    z-index: 1;
 }
 
 /*FIJAR HEADER*/
@@ -87,8 +87,8 @@ position: absolute;
 .navbar li:hover > ul{
 display: block;
 }
-.submenu{
-    background-color: var(--ligth);
+.submenu {
+    background-color:  #cf833c;
 }
 
 @media screen and (max-width:620px) {
@@ -101,6 +101,13 @@ display: block;
        flex-direction: column;
  
     } 
+ }
+ .principal div{
+    align-content: center;
+
+ }
+ main {
+    align-content: center;
  }
 
 footer {
