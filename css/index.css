@@ -71,15 +71,19 @@ header{
 .navbar  li a {
 
     display:block;
-    padding: 0.3rem 0.6rem;
+    padding: 0.6rem 0.9rem;
     text-decoration: none;
     color: black;
+    border-radius: 12px;
 }
 .navbar li a:hover {
-background-color: var(--secondary);
-transition: all 1s ease-in-out;
+background-color: var(--ligth);
+transition: all 0.9s ease-in-out;
+border: 1px solid;
+
 }
 .navbar li ul {
+    gap: 0.6rem;
 display:none;
 position: absolute;
 /*min-width: 1rem;*/
@@ -110,6 +114,15 @@ display: block;
     align-content: center;
  }
 
+.row div:hover{
+    padding: 2rem;
+    transition: all 1s;
+transform: rotate(-4deg);
+}
+
+ article {
+    padding: 5rem;
+}
 footer {
     padding: 1em 0;
     text-align: center;
