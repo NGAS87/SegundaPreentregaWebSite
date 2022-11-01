@@ -1,0 +1,337 @@
+/* Import estilo de letra*/
+
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@200;300;500&display=swap');
+
+/* Variables */
+
+:root {
+  /* Palette*/
+  --primary:rgb(10, 10, 10);
+  --secondary:#4ECDC4;
+  --ligth:#FFFFFF;
+  --accent:#8C1C13;
+
+  /* Font Sizes*/
+  --text-xxl:20px;
+  --text-xl:18px;
+  --text-lg:16px;
+  --text-md:14px;
+  --text-sm:12px;
+  --text-xs:10px;
+
+  /*Spacing*/
+  --sp-xxl:12rem;
+  --sp-xl:8rem;
+  --sp-lg:5rem;
+  --sp-md:3.2rem;
+  --sp-sm:1.6rem;
+  --sp-xs:0.8rem;
+}
+
+/*-------------------------------------------Normalize----------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Mada', sans-serif;
+  font-size: var(--text-xl);
+}
+
+/*-----------------------------------------Header---------------------------------------------------*/
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #027BCE;
+  z-index: 2;
+  height: 10rem;
+}
+
+.logotipo {
+  margin-top: 2.5rem;
+}
+
+/*logo de la Pagina*/
+/*-------------------------------------------Header---------------------------------------------*/
+
+/*-------------------------------------Barra de Navegacion-------------------------------------------*/
+
+.navbar {
+  font-size: var(--text-xl);
+
+  ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+  li a {
+    display: block;
+    padding: 0.6rem 0.9rem;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      background-color: var(--primary);
+      color: #ffffff !important;
+      transition: all 0.5s ease-in-out;
+      border: 1px solid;
+    }
+  }
+}
+
+.dropdown-menu {
+  font-size: var(--text-md);
+}
+
+.navbar li {
+  ul {
+    gap: 0.6rem;
+    display: none;
+    position: absolute;
+
+    /*min-width: 1rem;*/
+  }
+
+  &:hover > ul {
+    display: block;
+  }
+}
+
+.submenu {
+  background-color: var(--ligth);
+}
+
+@media screen and (max-width: 620px) {
+  header {
+    position: sticky;
+    display: list-item;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    background-color: var(--ligth);
+    width: 60%;
+  }
+}
+
+/*-----------------------------------Barra de Navegacion-------------------------------------------*/
+
+/*-------------------------------Carrucel de imagenes Home ---------------------------------------------*/
+
+main {
+  align-content: center;
+}
+
+.control-carucel {
+  background-color: black;
+
+  /*z-index: 0;*/
+}
+
+.carousel {
+  margin: 5%;
+}
+
+/*---------------------------------Carrucel de imagenes Home--------------------------------------------*/
+
+/*----------------------------------Hover Cuadros de Texto Home--------------------------------------*/
+
+.home .row div:hover {
+  transform: scale(1.05, 1.2);
+  transition: transform .2s;
+
+  /* Animation */
+}
+
+/*----------------------------------Hover Cuadros de Texto Home--------------------------------------*/
+
+/*-----------------------------------Hover Imagenes Historia-----------------------------------------*/
+
+.container1 {
+  margin: 5%;
+}
+
+.row {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+article .col {
+  display: flex;
+  justify-content: center;
+}
+
+.row article:hover {
+  transform: scale(1.05, 1.05);
+  transition: transform .2s;
+}
+
+/*-----------------------------------Hover Imagenes Historia-----------------------------------------*/
+
+/*------------------------------------Animacion maquina de escribir/textos Historia-------------------*/
+
+.container2 {
+  height: 60%;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+
+  h1 {
+    margin: auto;
+    position: relative;
+  }
+}
+
+h1 span {
+  position: absolute;
+  background-color: var(--bs-warning);
+  right: 0;
+  width: 0;
+  border-left: 1px solid #0e0e0e;
+  animation: maquina 4s infinite alternate steps(19);
+}
+
+@keyframes maquina {
+  from {
+    width: 100%;
+  }
+
+  to {
+    width: 0;
+  }
+}
+
+/*------------------------------------Animacion maquina de escribir/textos Historia-------------------*/
+/*----------------------------------Pag Productos-----------------------------------------------------*/
+
+.productos {
+  padding: 3rem 3rem;
+}
+
+.flexCenterProductos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flexCenterProductos1 {
+  padding: 5% 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flexCenterProductos2 {
+  padding: 5% 5%;
+  display: flex;
+  justify-content: space-around;
+
+  /*background-color: var(--bs-danger);*/
+}
+
+.flexCenterProductos3 {
+  padding: 5% 5%;
+  display: flex;
+  justify-content: space-around;
+
+  /*background-color: var(--bs-info);*/
+}
+
+@media screen and (max-width: 620px) {
+  .flexCenterProductos3 {
+    padding: 5% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    /*background-color: var(--bs-info);*/
+  }
+
+  .flexCenterProductos2 {
+    padding: 5% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    /*background-color: var(--bs-danger);*/
+  }
+}
+
+.flexCenterProductos1 article:hover, .flexCenterProductos2 article:hover, .flexCenterProductos3 article:hover {
+  transform: scale(1.1, 1.1);
+  transition: transform 0.2s;
+}
+
+/*----------------------------------Pag Productos-----------------------------------------------------*/
+
+/*----------------------------------Pag Servicios-----------------------------------------------------*/
+
+.servicios {
+  margin: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    margin-left: 25%;
+  }
+}
+
+.imgServicios {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 1160px) {
+  .imgServicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+/*----------------------------------Pag Servicios-----------------------------------------------------*/
+
+/*-------------------------------------Pag Contacto------------------------------------------------------*/
+
+.contacto {
+  /*margin-left: 30%;*/
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+@media screen and (max-width: 736px) {
+  .contacto {
+    /*margin-left: 15%;*/
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+}
+
+.contactoG {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*-------------------------------------Pag Contacto------------------------------------------------------*/
+
+footer {
+  padding: 1em 0;
+  text-align: center;
+  background-color: var(--bs-blue);
+  color: var(--bs-black);
+  font-size: var(--text-lg);
+}
